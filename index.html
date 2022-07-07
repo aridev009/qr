@@ -46,7 +46,7 @@
         var setText = document.querySelector("#text-set");
         
         btn.addEventListener("click" , function(){
-            fetch(`https://chart.googleapis.com/chart?&cht=qr&chs=100x100&chl=${TextAreaValue.value}`)
+            fetch(`https://chart.googleapis.com/chart?&cht=qr&chs=500x500&chl=${TextAreaValue.value}`)
             .then(response =>{
                 // console.log(response)
                 return response;
