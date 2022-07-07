@@ -46,7 +46,7 @@
         var setText = document.querySelector("#text-set");
         
         btn.addEventListener("click" , function(){
-            fetch(`https://api.qrserver.com/v1/create-qr-code/?data=${TextAreaValue.value}&size=100x100`)
+            fetch(`https://chart.googleapis.com/chart?&cht=qr&chs=100x100&chl=${TextAreaValue.value}`)
             .then(response =>{
                 // console.log(response)
                 return response;
